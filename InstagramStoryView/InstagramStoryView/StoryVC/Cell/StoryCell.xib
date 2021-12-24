@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GreycliffCF-Bold.otf">
+            <string>GreycliffCF-Bold</string>
+        </array>
+        <array key="GreycliffCF-DemiBold.otf">
+            <string>GreycliffCF-DemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoryCell" customModule="InstagramStoryView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Up-UG-5hp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgZ-3S-iGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="yEA-x9-HGn">
+                        <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2n-fy-llg">
+                        <rect key="frame" x="192" y="64" width="30" height="19"/>
+                        <fontDescription key="fontDescription" name="GreycliffCF-DemiBold" family="Greycliff CF" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5y-jm-eEY">
+                        <rect key="frame" x="0.0" y="103" width="414" height="4"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="mQl-mF-w0W"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-GN-Z0t">
+                        <rect key="frame" x="20" y="821" width="374" height="45"/>
+                        <color key="backgroundColor" red="1" green="0.78823529411764703" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="9c9-fc-h2W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GreycliffCF-Bold" family="Greycliff CF" pointSize="16"/>
+                        <state key="normal" title="Button Text">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZRc-A5-q2O"/>
+            <constraints>
+                <constraint firstItem="7Up-UG-5hp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="16z-08-2Bz"/>
+                <constraint firstAttribute="trailing" secondItem="xdt-GN-Z0t" secondAttribute="trailing" constant="20" id="3O5-Fo-1kb"/>
+                <constraint firstItem="zgZ-3S-iGF" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="4Nc-Dz-EnJ"/>
+                <constraint firstItem="yEA-x9-HGn" firstAttribute="centerX" secondItem="ZRc-A5-q2O" secondAttribute="centerX" id="6RI-8d-NlL"/>
+                <constraint firstItem="xdt-GN-Z0t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="9Zf-nc-wxO"/>
+                <constraint firstAttribute="trailing" secondItem="7Up-UG-5hp" secondAttribute="trailing" id="Djd-qp-o5h"/>
+                <constraint firstAttribute="top" secondItem="zgZ-3S-iGF" secondAttribute="top" id="JXn-sx-aNX"/>
+                <constraint firstAttribute="bottom" secondItem="xdt-GN-Z0t" secondAttribute="bottom" constant="30" id="NHz-H4-hVw"/>
+                <constraint firstAttribute="trailing" secondItem="zgZ-3S-iGF" secondAttribute="trailing" id="WEX-Ib-5gC"/>
+                <constraint firstItem="E5y-jm-eEY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YxQ-To-OSj"/>
+                <constraint firstAttribute="bottom" secondItem="7Up-UG-5hp" secondAttribute="bottom" id="ZT6-hh-jlZ"/>
+                <constraint firstItem="zgZ-3S-iGF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dP3-ud-SB3"/>
+                <constraint firstAttribute="trailing" secondItem="E5y-jm-eEY" secondAttribute="trailing" id="eXb-Wp-gUF"/>
+                <constraint firstItem="K2n-fy-llg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ic4-1K-tIe"/>
+                <constraint firstItem="E5y-jm-eEY" firstAttribute="top" secondItem="K2n-fy-llg" secondAttribute="bottom" constant="20" id="q44-F2-dQd"/>
+                <constraint firstItem="yEA-x9-HGn" firstAttribute="centerY" secondItem="ZRc-A5-q2O" secondAttribute="centerY" id="rgG-t3-UpZ"/>
+                <constraint firstItem="K2n-fy-llg" firstAttribute="top" secondItem="ZRc-A5-q2O" secondAttribute="top" constant="20" id="tqZ-us-0Oc"/>
+                <constraint firstItem="7Up-UG-5hp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yqF-Fx-IMz"/>
+            </constraints>
+            <connections>
+                <outlet property="btnText" destination="xdt-GN-Z0t" id="zh1-zi-hLv"/>
+                <outlet property="imgSnap" destination="zgZ-3S-iGF" id="eFL-mI-9hl"/>
+                <outlet property="indicatorView" destination="yEA-x9-HGn" id="eyv-tB-lBx"/>
+                <outlet property="lblTitle" destination="K2n-fy-llg" id="9Zp-Wy-ebo"/>
+                <outlet property="videoView" destination="7Up-UG-5hp" id="7jI-NZ-GeB"/>
+                <outlet property="viewProgress" destination="E5y-jm-eEY" id="7Wi-zO-jFA"/>
+            </connections>
+            <point key="canvasLocation" x="-43.478260869565219" y="112.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
